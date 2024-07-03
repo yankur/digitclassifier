@@ -1,6 +1,6 @@
 import random
 import numpy as np
-from ..interface import DigitClassificationInterface
+from models.interface import DigitClassificationInterface
 
 
 class RandomModel(DigitClassificationInterface):

@@ -1,8 +1,7 @@
-import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from ..interface import DigitClassificationInterface
+from models.interface import DigitClassificationInterface
 
 
 class CNN(nn.Module):

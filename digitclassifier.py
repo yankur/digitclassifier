@@ -10,7 +10,7 @@ class DigitClassifier:
         if algorithm == "cnn":
             self.model = CNNModel()
         elif algorithm == "rf":
-            self.model == RFModel()
+            self.model = RFModel()
         elif algorithm == "rand":
             self.model = RandomModel()
         else:
