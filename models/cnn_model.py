@@ -29,10 +29,9 @@ class CNNModel(DigitClassificationInterface):
         self.model = CNN()
         self.model.eval() # random weights init
 
-    def predict(self, image: np.ndarray) -> int:
+    def predict(self, image: torch.tensor) -> int:
         with torch.no_grad():
-            tensor = torch.tensor(image, dtype=torch.float32).unsqueeze(0).unsqueeze(0)
-            output = self.model(tensor)
+            output = self.model(image)
             pred = output.argmax(dim=1, keepdim=True).item()
         return pred
 
