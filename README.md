@@ -15,5 +15,5 @@ conda activate digitclassifier
 ```bash
 git clone https://github.com/yankur/digitclassifier.git
 cd digitclassifier
-pip install requirements.txt
+pip install -r requirements.txt
 ```
